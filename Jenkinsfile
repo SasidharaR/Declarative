@@ -3,12 +3,12 @@ pipeline {
     stages {
       stage ('Cloning') {
             steps {
-                git url: 
+                git url: "https://github.com/SasidharaR/Declarative.git"
             }
         }  
       stage ('Shell script') {
             steps {
-                sh "echo 'hello, world'"
+                sh "cat 'README.md'"
             }
         }
     }
